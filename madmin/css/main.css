@@ -1,0 +1,14 @@
+i.icon-orange {
+  color: orange;
+}
+
+i.icon-red {
+  color: red;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}

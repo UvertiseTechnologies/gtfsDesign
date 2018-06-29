@@ -75,13 +75,22 @@ section {
   border: 2px solid #673ab7;
 }
 
-.container .loginForm input[type="submit"] {
-  color: #fff;
-  background: #673ab7;
-  transition: 0.5s;
+.container .loginForm .submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 15px;
+    text-align: center;
+    background: rgba(103, 50, 183);
+    color: white;
 }
 
-.container .loginForm input[type="submit"]:hover {
+.container .loginForm .submit:hover {
   background: #ff0057;
   border: 2px solid #ff0057;
 }
