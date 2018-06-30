@@ -1,0 +1,384 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Sales Application</title>
+</head>
+
+<body class="grey lighten-4">
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="side-nav" class="button-collapse show-on-large left">
+                    <i class="material-icons left">menu</i>Menu
+                </a>
+                <a href="#" class="brand">Mobile Sales Application</a>
+                <ul id="dropdown_user" class="dropdown-content">
+
+                    <li>
+                        <a class="grey-text" href="#!">Acount settings
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="grey-text" href="#!">Logout</a>
+                    </li>
+                </ul>
+                <ul id="dropdown_notify" class="dropdown-content collection" style="width: 20%;">
+
+                    <li class="collection-item">
+                        <p class="grey-text">Alvin</p>
+                    </li>
+                    <li class="collection-item">
+                        <p class="grey-text">Alvin</p>
+                    </li>
+                    <li class="collection-item">
+                        <p class="grey-text">Alvin</p>
+                    </li>
+                    <li class="collection-item">
+                        <p class="grey-text"> Alvin</p>
+                    </li>
+
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <div id="topbarsearch">
+                            <div class="input-field  white-text">
+                                <i class="white-text material-icons prefix">search</i>
+                                <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text">
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-activates="dropdown_notify">
+                            <i class="material-icons right">notification_important</i>Notification
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-activates="dropdown_user">
+                            <i class="material-icons right">account_circle</i>
+                            User
+                        </a>
+                    </li>
+                </ul>
+                <!-- Side nav -->
+                <ul id="side-nav" class="side-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="img/ocean.jpg" alt="">
+                            </div>
+                            <a href="#">
+                                <img src="img/person1.jpg" alt="" class="circle">
+                            </a>
+                            <a href="#">
+                                <span class="name white-text">username</span>
+                            </a>
+                            <a href="#">
+                                <span class="email white-text">username@gmail.com</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">dashboard</i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="posts.html">Posts</a>
+                    </li>
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Categories
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">category 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">category 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">category 1</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="comments.html">Comments</a>
+                    </li>
+                    <li>
+                        <a href="users.html">Users</a>
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a class="subheader">Account Controls</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="waves-effect">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- form components are here -->
+    <div class="container">
+        <div class="row" style='margin-top:20px; '>
+            <div class="col card s6">
+                <div class="container">
+                    <!-- START HERE -->
+                    <form style="margin-top: 20px">
+
+
+                        <!-- VALUE & DISABLED -->
+                        <div class="input-field">
+                            <input disabled placeholder="Email" id="email" type="email" value="john@gmail.com">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <!-- TEXTAREA -->
+                        <div class="input-field">
+                            <textarea placeholder="Message" id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        <!-- INLINE FIELD -->
+                        Number of users:
+                        <div class="input-field inline">
+                            <input id="users" type="text">
+                            <label for="users">#</label>
+                        </div>
+
+                        <!-- ICON PREFIX -->
+                        <div class="input-field">
+                            <i class="material-icons blue-text prefix">phone</i>
+                            <input id="phone" type="tel">
+                            <label for="phone">Phone Number</label>
+                        </div>
+
+                        <!-- VALIDATION & ERROR -->
+                        <div class="input-field">
+                            <input placeholder="Email" id="email" type="email" class="validate">
+                            <label data-error="Invalid" data-success="Valid" for="email">Email</label>
+                        </div>
+
+
+
+
+
+                        <!-- RADIO BUTTONS -->
+                        <div class="row">
+                            <p>
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label>
+                            </p>
+                            <p>
+                                <input class="with-gap" type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </p>
+                        </div>
+
+
+                        <br>
+                        <br>
+
+                        <!-- CHECKBOXES -->
+                        <p>
+                            <input type="checkbox" name="tech" id="html">
+                            <label for="">Remember me</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tech" id="css" checked>
+                            <label for="css">CSS</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="filled-in" name="tech" id="js">
+                            <label for="js">JavaScript</label>
+                        </p>
+                        <p>
+                            <input disabled type="checkbox" name="tech" id="php">
+                            <label for="php">PHP</label>
+                        </p>
+
+                        <br>
+                        <br>
+                        <div>
+                            <input type="submit" value="Submit" class="btn blue">
+                        </div>
+                    </form>
+
+
+
+                    <!-- END HERE -->
+
+                </div>
+
+            </div>
+
+            <div class="col card offset-s1 s5">
+                <div class="container">
+                    <!-- START HERE -->
+                    <form style="margin-top: 20px;">
+                        <!-- SWITCH -->
+                        <div class="switch">
+                            <label>
+                                Disable
+                                <input type="checkbox" checked>
+                                <span class="lever"></span>
+                                Enable
+                            </label>
+                        </div>
+
+                        <!-- DISABLED SWITCH -->
+                        <div class="switch">
+                            <label>
+                                Disable
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Enable
+                            </label>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <!-- FILE INPUT -->
+                        <div class="file-field input-field">
+                            <div class="btn blue">
+                                <span>Upload File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input type="text" class="file-path">
+                            </div>
+                        </div>
+
+                        <!-- RANGE SLIDER -->
+                        <p class="range-field ">
+                            <input type="range" min="0" max="100">
+                        </p>
+
+                        <!-- DATE PICKER -->
+                        <div class="input-field">
+                            <input type="text" class="datepicker" id="date">
+                            <label for="date">Choose a Date</label>
+                        </div>
+
+                        <!-- TIME PICKER -->
+                        <div>
+                            <input type="text" class="timepicker" id="time">
+                            <label for="time">Choose a Time</label>
+                        </div>
+
+                        <!-- CHARACTER COUNTER -->
+                        <div>
+                            <input id="post" type="text" data-length="20">
+                            <label for="post">Post</label>
+                        </div>
+
+                        <!-- AUTOCOMPLETE -->
+                        <div>
+                            <input type="text" id="fruit" class="autocomplete">
+                            <label for="fruit">Type a Fruit</label>
+                        </div>
+
+                        <br>
+                        <label>Browser Select</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+
+                        <br>
+                        <div>
+                            <input type="submit" value="Submit" class="btn blue">
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class=" loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer  section center blue  white-text darken-2">
+        <p>Mobile sales Application Copyright &copy; 2018</p>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+
+        $('.section').hide();
+
+        setTimeout(function () {
+            $(document).ready(function () {
+                // section all reveals slowly
+                $('.section').fadeIn();
+                // loader
+                $('.loader').hide();
+                //Init Side nav
+                $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
+                $('.button-collapse').sideNav();
+                // counter
+                $('.count').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                            duration: 1000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                });
+
+            });
+        }, 2000);
+
+    </script>
+</body>
+
+</html>

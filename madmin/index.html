@@ -10,7 +10,7 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Materialize Theme</title>
+  <title>Mobile sales Application</title>
 </head>
 
 <body class="grey lighten-4">
@@ -22,8 +22,9 @@
         <a href="#" data-activates="side-nav" class="button-collapse show-on-large left">
           <i class="material-icons left">menu</i>Menu
         </a>
-
+        <a href="#" class="brand">Mobile Sales Application</a>
         <ul id="dropdown_user" class="dropdown-content">
+
           <li>
             <a class="grey-text" href="#!">Acount settings
             </a>
@@ -50,6 +51,16 @@
 
         </ul>
         <ul class="right hide-on-med-and-down">
+          <li>
+            <div id="topbarsearch">
+              <div class="input-field  white-text">
+                <i class="white-text material-icons prefix">search</i>
+                <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text">
+
+              </div>
+
+            </div>
+          </li>
           <li>
             <a class="dropdown-trigger" data-beloworigin="true" href="#!" data-activates="dropdown_notify">
               <i class="material-icons right">notification_important</i>Notification
@@ -111,10 +122,10 @@
 
           </li>
           <li>
-            <a href="comments.html">Comments</a>
+            <a href="table.html">Table</a>
           </li>
           <li>
-            <a href="users.html">Users</a>
+            <a href="grids.html">Grid</a>
           </li>
           <li>
             <div class="divider"></div>
@@ -123,14 +134,14 @@
             <a class="subheader">Account Controls</a>
           </li>
           <li>
-            <a href="login.html" class="waves-effect">Logout</a>
+            <a href="forms.html" class="waves-effect">Forms</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container section">
 
     <!-- card row -->
     <div class="row">
@@ -142,12 +153,12 @@
           <div class="card-stacked">
             <div class="card-content">
 
-              <h4>1530</h4>
+              <h4 class="count"> 1530</h4>
 
 
             </div>
             <div class="card-action">
-              <a href="#" class="blue-text">
+              <a href="#" class="orange-text">
                 <i class="material-icons right">chevron_right</i>Users</a>
             </div>
           </div>
@@ -161,11 +172,11 @@
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h4>890</h4>
+              <h4 class="count">890</h4>
 
             </div>
             <div class="card-action">
-              <a href="#" class="blue-text">
+              <a href="#" class="orange-text">
                 <i class="material-icons right">chevron_right</i>Sales</a>
             </div>
           </div>
@@ -179,11 +190,11 @@
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h4>330</h4>
+              <h4 class="count"> 330</h4>
 
             </div>
             <div class="card-action">
-              <a href="#" class="blue-text">
+              <a href="#" class="orange-text">
                 <i class="material-icons right">chevron_right</i>Delivery</a>
             </div>
           </div>
@@ -201,7 +212,7 @@
 
             </div>
             <div class="card-action">
-              <a href="#" class="blue-text">
+              <a href="#" class="orange-text">
                 <i class="material-icons right">chevron_right</i>Product</a>
             </div>
           </div>
@@ -213,12 +224,19 @@
 
     <div class="row">
       <!-- Table within a card -->
-      <div class="col s7 ">
+      <div class="col s12 m6 l8 ">
         <div class="card white darken-1">
           <div class="card-content black-text lighten-3">
-            <span class="card-title">
-              <h4>Products</h4>
-            </span>
+            <div class="row">
+              <div class="col s12 m6 l4">
+                <h4>Products</h4>
+              </div>
+              <div class="col offset-l5 s12 m6 l3">
+                <a class="btn btn-small waves-effect waves-light white-text blue">
+                  <i class="material-icons left">add</i>New</a>
+              </div>
+            </div>
+
             <table class="highlight responsive-table">
               <thead>
                 <tr>
@@ -330,56 +348,53 @@
       </div>
       <!-- End - table within a card -->
       <!-- list collection  -->
-      <div class="col s5">
+      <div class="col s12 m6 l4">
         <ul class="collection with-header">
           <li class="collection-header">
-            <span>
-              <h4>User List</h4>
-            </span>
-
+            <h4>Users </h4>
           </li>
           <li class="collection-item avatar">
-            <img src="images/ocean.jpg" alt="" class="circle">
+            <img src="img/person1.jpg" alt="" class="circle">
             <span class="title">
               <h6>Username</h6>
             </span>
-            <p>Lorem ipsum, Repellat, illo...
+            <p class="truncate">Lorem ipsum, Repellat, illo orem ipsum, Repellat, illo.
             </p>
             <a href="#!" class="secondary-content orange-text">view</a>
           </li>
           <li class="collection-item avatar">
-            <img src="images/call.jpg" alt="" class="circle">
+            <img src="img/call.jpg" alt="" class=" circle">
             <span class="title">
               <h6>Username</h6>
             </span>
-            <p>Lorem ipsum, Repellat, illo.
+            <p class="truncate">Lorem ipsum, Repellat, illo orem ipsum, Repellat, illo.
             </p>
             <a href="#!" class="secondary-content orange-text">view</a>
           </li>
           <li class="collection-item avatar">
-            <img src="images/person1.jpg" alt="" class="circle">
+            <img src="img/person4.jpg" alt="" class="circle">
             <span class="title">
               <h6>Username</h6>
             </span>
-            <p>Lorem ipsum, Repellat, illo.
+            <p class="truncate">Lorem ipsum, Repellat, illo orem ipsum, Repellat, illo.
             </p>
             <a href="#!" class="secondary-content orange-text">view</a>
           </li>
           <li class="collection-item avatar">
-            <img src="images/person1.jpg" alt="" class="circle">
+            <img src="img/person1.jpg" alt="" class="circle">
             <span class="title">
               <h6>Username</h6>
             </span>
-            <p>Lorem ipsum, Repellat, illo.
+            <p class="truncate">Lorem ipsum, Repellat, illoorem ipsum, Repellat, illo.
             </p>
             <a href="#!" class="secondary-content orange-text">view</a>
           </li>
           <li class="collection-item avatar">
-            <img src="images/person1.jpg" alt="" class="circle">
+            <img src="img/person3.jpg" alt="" class="circle">
             <span class="title">
               <h6>Username</h6>
             </span>
-            <p>Lorem ipsum, Repellat, illo.
+            <p class="truncate">Lorem ipsum, Repellat, illo orem ipsum, Repellat, illo.
             </p>
             <a href="#!" class="secondary-content orange-text">view</a>
           </li>
@@ -390,29 +405,58 @@
   </div>
 
 
+  <div class=" loader preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="  section center blue  white-text darken-2">
+    <p>Mobile sales Application Copyright &copy; 2018</p>
+  </footer>
+
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    $(document).ready(function () {
-      //Init Side nav
-      $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
-      $('.button-collapse').sideNav();
-      // counter
-      $('.count').each(function () {
-        $('this').prop('Counter', 0).animate({
-          Counter: $('this').text()
-        }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function (now) {
-              $('this').text(Math.ceil(now));
-            }
-          });
-      });
 
-    });
+    $('.section').hide();
+
+    setTimeout(function () {
+      $(document).ready(function () {
+        // section all reveals slowly
+        $('.section').fadeIn();
+        // loader
+        $('.loader').hide();
+        //Init Side nav
+        $(".dropdown-trigger").dropdown({ hover: true, constrainWidth: false });
+        $('.button-collapse').sideNav();
+        // counter
+        $('.count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+              duration: 1000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              }
+            });
+        });
+
+      });
+    }, 2000);
+
   </script>
 </body>
 
