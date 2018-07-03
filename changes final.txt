@@ -1,0 +1,5 @@
+search , 
+add new
+breadcrum
+font name
+size
